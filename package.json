@@ -6,6 +6,7 @@
   "scripts": {
     "prebuild": "npm run clean",
     "build": "npm run build:cjs && npm run build:esm",
+    "postinstall": "npm run build:cjs && npm run build:esm",
     "build:cjs": "BABEL_ENV=cjs babel src/ -d build/",
     "build:esm": "BABEL_ENV=esm babel src/ -d esm/",
     "clean": "rimraf build esm",
