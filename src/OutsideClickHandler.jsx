@@ -21,7 +21,7 @@ const propTypes = forbidExtraProps({
   disabled: PropTypes.bool,
   useCapture: PropTypes.bool,
   display: PropTypes.oneOf(objectValues(DISPLAY)),
-  className: PropTypes.default.string,
+  className: PropTypes.string,
 });
 
 const defaultProps = {
